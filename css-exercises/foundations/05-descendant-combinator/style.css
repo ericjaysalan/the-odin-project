@@ -1,0 +1,34 @@
+/* class selectors 
+.container .text {
+    background-color: rgb(247, 242, 0);
+    color: #ff0000;
+    font-size: 20px;
+    text-align: center;
+}
+*/
+
+/*
+type selector [same thing as above]
+div p {
+    background-color: rgb(247, 242, 0);
+    color: #ff0000;
+    font-size: 20px;
+    text-align: center;
+}
+*/
+
+/*class + type selector
+.container p {
+    background-color: rgb(247, 242, 0);
+    color: #ff0000;
+    font-size: 20px;
+    text-align: center;
+}
+*/
+/* type + class selector*/
+div .text {
+    background-color: rgb(247, 242, 0);
+    color: #ff0000;
+    font-size: 20px;
+    text-align: center;
+}
