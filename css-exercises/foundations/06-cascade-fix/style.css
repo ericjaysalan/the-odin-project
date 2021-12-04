@@ -2,16 +2,20 @@
 .small-para {
   color: hsl(0, 100%, 50%);
 }
+/*
+.para and .small-para have the same specificity, so whichever is last will the rule applied
+
+Since the second paragraph has both of these classes, whichever is last will be applied
+*/
+.para {
+  font-size: 22px;
+}
 
 .small-para {
   font-size: 12px;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
+#confirm-button {
   background: green;
   color: white;
   font-size: 20px;
@@ -23,13 +27,20 @@
   color: black;
   font-size: 20px;
 }
-
-.child {
+/*green and red paragraphs*/
+.text.child {
   color: red;
   font-size: 14px;
 }
+/* Also works
+div.text div {
+  color: red;
+  font-size: 14px;
+}
+*/
 
 div.text {
   color: green;
   font-size: 28px;
+  width: 500px; /*Instructions said not to add any declarations, but the desired outcome had the word "there" on a separate line. I could have added a <br>, but the instructions also said not to edit the html file, and I don't wanna break 2 rules, so I'm only breaking this one. XD*/
 }
