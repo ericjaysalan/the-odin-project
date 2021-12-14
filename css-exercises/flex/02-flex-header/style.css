@@ -1,6 +1,22 @@
+* {
+  /*I would have placed this here:
+  padding: 0;
+  margin: 0;
+  */
+  box-sizing: border-box;
+  font-family: "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 10px;
+}
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -14,6 +30,10 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
 }
 
 a {
